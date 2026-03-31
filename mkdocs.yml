@@ -2,8 +2,8 @@ site_name: CRG Demo CRM
 site_url: https://dasun-theekshana.github.io/crg-demo-documentation/
 site_description: Documentation for the CRG Demo CRM host application
 site_author: Altrium
-docs_dir: .
-site_dir: ../site
+docs_dir: docs
+site_dir: site
 
 theme:
   name: material
