@@ -1,0 +1,68 @@
+site_name: CRG Demo CRM
+site_url: https://dasun-theekshana.github.io/crg-demo-documentation/
+site_description: Documentation for the CRG Demo CRM host application
+site_author: Altrium
+docs_dir: .
+site_dir: ../site
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: slate
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: slate
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - content.code.copy
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Architecture:
+      - Overview: architecture/overview.md
+      - Frontend: architecture/frontend.md
+      - Backend: architecture/backend.md
+  - Features:
+      - Dashboard: features/dashboard.md
+      - Contacts: features/contacts.md
+      - Companies: features/companies.md
+      - Deals: features/deals.md
+      - Activities: features/activities.md
+      - Settings: features/settings.md
+  - API Reference:
+      - Overview: api/overview.md
+      - Endpoints: api/endpoints.md
+  - CRG Integration:
+      - Overview: crg-integration/overview.md
+      - Configuration: crg-integration/configuration.md
+      - Sitemap Metadata: crg-integration/sitemap.md
+  - Development:
+      - Setup: development/setup.md
+      - Testing: development/testing.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - attr_list
+  - md_in_html
